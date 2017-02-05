@@ -54,6 +54,8 @@ export class Logger {
   static set(config: Config): void {
     if (config.troubleshoot) {
       Logger.logLevel = LogLevel.DEBUG;
+    } else if (config.logLevel) {
+      Logger.logLevel = (<any>LogLevel)[config.logLevel];
     }
   }
 

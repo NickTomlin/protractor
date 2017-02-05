@@ -517,6 +517,13 @@ export interface Config {
    */
   highlightDelay?: number;
 
+  /**
+   * Protractor log level [ERROR, WARN, INFO, DEBUG]
+   *
+   * default: INFO
+   */
+  logLevel?: string;
+
   // ---------------------------------------------------------------------------
   // ----- The test framework
   // --------------------------------------------------
