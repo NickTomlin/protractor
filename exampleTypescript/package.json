@@ -6,17 +6,19 @@
   "license": "MIT",
   "scripts": {
     "tsc": "tsc",
+    "drivers": "webdriver-manager update",
     "pretest": "npm run tsc",
-    "test": "protractor tmp/conf.js"
+    "test": "protractor conf.js"
   },
   "dependencies": {
-    "@types/jasmine": "^2.5.38",
+    "@types/jasmine": "2.5.41",
     "@types/jasminewd2": "^2.0.0",
     "jasmine": "^2.4.1",
     "protractor": "file:../",
     "typescript": "~2.0.0"
   },
   "devDependencies": {
-    "@types/jasminewd2": "^2.0.0"
+    "@types/jasminewd2": "^2.0.0",
+    "ts-node": "^2.1.0"
   }
 }
