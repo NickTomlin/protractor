@@ -55,7 +55,7 @@ export class Logger {
     if (config.troubleshoot) {
       Logger.logLevel = LogLevel.DEBUG;
     } else if (config.logLevel) {
-      Logger.logLevel = (<any>LogLevel)[config.logLevel];
+      Logger.logLevel = LogLevel[config.logLevel];
     }
   }
 
@@ -141,7 +141,7 @@ export class Logger {
         }
         break;
       default:
-        throw new Error('Log level undefined');
+        throw new Error('Log level invalid or undefined');
     }
   }
 
